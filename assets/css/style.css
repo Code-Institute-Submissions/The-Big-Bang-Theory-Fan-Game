@@ -13,3 +13,6 @@ img{
     display: flex;
     flex-flow: column nowrap;
 }
+.game-answers {
+    display: none;
+}

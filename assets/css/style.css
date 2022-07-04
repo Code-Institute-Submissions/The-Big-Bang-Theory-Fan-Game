@@ -1,18 +1,42 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Raleway:wght@600&display=swap');
+
+* {
     box-sizing: border-box;
+    margin:0;
+    padding:0;
 }
-img{
+
+html {
+    height:100%
+}
+
+body {
+    min-height: 100%;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+    padding-right: 30px;
+    font-weight: 600;
+    color: #fff;
+    align-items: center;
+    position: relative;
+    background: radial-gradient(circle at top, #0000FF,  #00008B);
+}
+
+img {
     max-width: 100%;
 }
-.flex-row{
+
+.flex-row {
     display: flex;
     flex-flow: row nowrap;
 }
 
-.flex-column{
+.flex-column {
     display: flex;
     flex-flow: column nowrap;
 }
+
 .game-answers {
     display: none;
 }

@@ -8,8 +8,9 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="column container">
     <!--Heading and score-->
-    <section>
+    <section class="heading row">
         <ul>
             <li>Rock</li>
             <li>Paper</li>
@@ -18,7 +19,7 @@
             <li>Spock</li>
         </ul>
 
-        <div class="points">
+        <div class="points column">
             <div class="points-heading">Points</div>
             <div class="points-counter">1</div>
         </div>
@@ -32,19 +33,19 @@
         <div class="option spock"><i class="fa-solid fa-hand-spock"></i></div>
     </section>
     <!--Results page-->
-    <section class="section chosen game-answers">
+    <section class="section chosen game-answers row">
 
-        <div class="selected">   
+        <div class="selected column">   
             <p>You Chose</p>
             <div class="user-choice"></div>
         </div>
 
-        <div class="result game-answers">
+        <div class="result">
             <div class="result-title">Game lost</div>
             <button>Try Again</button>
         </div>
 
-        <div class="selected">
+        <div class="selected column">
             <p>Computer chose</p>
             <div class="computers-choice"></div>
         </div>
@@ -62,6 +63,7 @@
             <img src="assets/images/rules.jpg" alt="">
         </div>
     </div>
+</div>
 
 
 

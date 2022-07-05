@@ -79,3 +79,30 @@ button:focus, button:active {
     margin-top: 4px;
     line-height: 1;
 }
+
+.points {
+    letter-spacing: 2px;
+    padding-top: 20px;
+    width: 200px;
+    align-items: center;
+    height: 140px;
+    background: #00FFFF;
+    border-radius: 15px;
+}
+
+.points-heading {
+    letter-spacing: 2px;
+    font-size: 200%;
+    color:#00008B;
+    font-weight: 600;
+    margin-bottom: 5px;
+    
+}
+
+.points-counter {
+    color: #00008B;
+    font-weight: 800;
+    font-size: 400%;
+    margin-bottom: 20px;
+}
+

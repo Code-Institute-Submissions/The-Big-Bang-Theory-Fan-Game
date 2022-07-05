@@ -131,7 +131,7 @@ button:focus, button:active {
     z-index: 2;
 }
 
-option i:hover {
+.option i:hover {
     color: #ff0000;
 }
 
@@ -215,4 +215,5 @@ option i:hover {
     padding: 20px;
     border: 2px solid #ff0000;
     background-position: right bottom;
+    font-size: 2000%;
 }

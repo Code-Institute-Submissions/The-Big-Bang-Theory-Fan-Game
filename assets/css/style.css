@@ -172,4 +172,47 @@ option i:hover {
     align-items: center;
     width: 100%;
     padding: 20px;
+    text-align: center;
+}
+
+.chosen p {
+    font-size: 200%;
+    margin-bottom: 70px;
+    line-height: 1;
+}
+
+.chosen .option {
+    height: 300px;
+    width: 300px;
+    position: static;
+}
+
+.chosen .option i {
+    width: 100px;
+}
+
+.selected {
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+/* Results */
+
+.result {
+    font-size: 200%;
+    white-space: nowrap;
+}
+
+.result .result-title {
+    font-size: 300%;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.result button {
+    border-radius: 15px;
+    padding: 20px;
+    border: 2px solid #ff0000;
+    background-position: right bottom;
 }

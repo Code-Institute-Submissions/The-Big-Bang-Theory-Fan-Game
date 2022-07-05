@@ -106,3 +106,61 @@ button:focus, button:active {
     margin-bottom: 20px;
 }
 
+/* Game options */
+.game-options {
+    width: 100%;
+    position: relative;
+    height: 500px;
+    max-width: 600px;
+    background-size: 400px;
+    
+}
+
+.option {
+    display: flex;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+}
+
+.option i {
+    position: relative;
+    z-index: 2;
+}
+
+option i:hover {
+    color: #ff0000;
+}
+
+.option.scissors {
+    left: 220px;
+    top: 0px;
+    font-size: 300%;
+}
+
+.option.paper {
+    top: 130px;
+    right: 90px;
+    font-size: 300%;
+}
+
+.option.rock {
+    right: 160px;
+    bottom: 70px;
+    font-size: 300%;
+}
+
+.option.lizard {
+    left: 140px;
+    bottom: 70px;
+    font-size: 300%;
+}
+
+.option.spock {
+    top: 130px;
+    left: 70px;
+    font-size: 300%;
+}

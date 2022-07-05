@@ -164,3 +164,12 @@ option i:hover {
     left: 70px;
     font-size: 300%;
 }
+
+/* Chosen Section */
+
+.chosen {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}

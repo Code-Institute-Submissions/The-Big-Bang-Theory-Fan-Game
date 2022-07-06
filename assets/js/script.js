@@ -20,7 +20,7 @@ function game() {
         document.querySelectorAll('.game-options').forEach(card =>{
             card.addEventListener('click', (ev) => {
                 usersDecision = getUsersDecision(ev.target);
-                compsDecision = getComputersChoice();
+                compsDecision = getComputersDecision();
                 
                 startGame();
             })
@@ -29,3 +29,34 @@ function game() {
         resultElement.querySelector('button').addEventListener('click', tryAgain);
     })
 
+    function startGame() {
+        calculateWinner(usersDecision, compsDecision);
+        userOptionElement.classList.add('hidden');
+        chosenOptionElement.classList.remove('hidden');
+        clearResultBeforeAppend();
+        buildChoiceElement(true, usersDecision);
+        buildChoiceElement(false, compsDecision);
+    }
+
+    function getUsersDecision(target) {
+        if (target.nodeName === 'IMG') {
+            return target.parentElement.classList[1];
+        }
+        return target.classList[1];
+    }
+
+    function getComputersDecision() {
+        return action[Math.floor(Math.random() * 5)];
+    }
+
+    function calculateWinner(users, comps) {
+        if(users === comps) {
+            resultTitleElement.innerText = 'Tie';
+        } else if (getUserWinsStatus(users + comps)) {
+            resultTitleElement.innerText = 'You win';
+            calculateScore(1);
+        } else {
+            resultTitleElement.innerText = 'You lose';
+            calculateScore(-1);
+        }
+    }

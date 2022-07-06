@@ -214,7 +214,27 @@ button:focus, button:active {
     border-radius: 15px;
     padding: 20px;
     border: 2px solid #ff0000;
-    background-position: right bottom;
+    background-position: right;
 }
 
+.result button:hover {
+    background-position: left bottom;
+    color: #006600;
+}
 
+/* diagram */
+
+.diagram.active .rules-bg.active {
+    display: block;
+}
+
+.rules {
+    padding: 20px;
+    cursor: pointer;
+    position: absolute;
+    border-radius: 10px;
+    right: 30px;
+    bottom: 80px;
+    color: #006600;
+    text-transform: uppercase;
+}
